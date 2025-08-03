@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
@@ -8,7 +7,7 @@ import {
   Copy, 
   Check,
   Type,
-  Spacing,
+  Move,
   Radius,
   Zap
 } from "lucide-react";
@@ -122,7 +121,7 @@ const TokensPage = () => {
               <span>Typography</span>
             </TabsTrigger>
             <TabsTrigger value="spacing" className="flex items-center space-x-2">
-              <Spacing className="w-4 h-4" />
+              <Move className="w-4 h-4" />
               <span>Spacing</span>
             </TabsTrigger>
             <TabsTrigger value="radius" className="flex items-center space-x-2">
