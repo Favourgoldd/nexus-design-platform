@@ -91,10 +91,16 @@ const TokensPage = () => {
             </div>
 
             <div className="flex items-center space-x-4">
-              <Button variant="outline" size="sm">
-                <Github className="w-4 h-4 mr-2" />
-                GitHub
-              </Button>
+              <a 
+                href="https://github.com/Favourgoldd/nexus-design-platform.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm">
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -303,6 +309,32 @@ const TokensPage = () => {
             </div>
           </TabsContent>
         </Tabs>
+
+        {/* Contact Section */}
+        <div className="mt-16 text-center">
+          <div className="bg-white rounded-lg p-8 shadow-sm border">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Questions About Design Tokens?</h2>
+            <p className="text-slate-600 mb-6">
+              Need help implementing our design tokens or have suggestions for improvements?
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a 
+                href="mailto:seyidagold@gmail.com" 
+                className="text-blue-600 hover:text-blue-700 transition-colors flex items-center space-x-2"
+              >
+                <span>📧</span>
+                <span>seyidagold@gmail.com</span>
+              </a>
+              <a 
+                href="tel:+2348038829689" 
+                className="text-blue-600 hover:text-blue-700 transition-colors flex items-center space-x-2"
+              >
+                <span>📞</span>
+                <span>+234 803 882 9689</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

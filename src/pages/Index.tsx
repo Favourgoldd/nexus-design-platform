@@ -76,10 +76,16 @@ const HomePage = () => {
                   className="pl-10 w-64"
                 />
               </div>
-              <Button variant="outline" size="sm">
-                <Github className="w-4 h-4 mr-2" />
-                GitHub
-              </Button>
+              <a 
+                href="https://github.com/Favourgoldd/nexus-design-platform.git" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm">
+                  <Github className="w-4 h-4 mr-2" />
+                  GitHub
+                </Button>
+              </a>
             </div>
           </div>
         </div>
@@ -189,21 +195,51 @@ const HomePage = () => {
 
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-lg flex items-center justify-center">
-              <Palette className="w-4 h-4 text-white" />
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8">
+            <div className="flex items-center justify-center space-x-2 mb-6">
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-indigo-400 rounded-lg flex items-center justify-center">
+                <Palette className="w-4 h-4 text-white" />
+              </div>
+              <span className="text-xl font-bold">DesignHub</span>
             </div>
-            <span className="text-xl font-bold">DesignHub</span>
+            <p className="text-slate-400 mb-6">
+              Built with ❤️ for design and development teams
+            </p>
           </div>
-          <p className="text-slate-400 mb-4">
-            Built with ❤️ for design and development teams
-          </p>
+          
+          {/* Contact Information */}
+          <div className="text-center mb-8">
+            <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-slate-300">
+              <a 
+                href="mailto:seyidagold@gmail.com" 
+                className="hover:text-white transition-colors flex items-center space-x-2"
+              >
+                <span>📧</span>
+                <span>seyidagold@gmail.com</span>
+              </a>
+              <a 
+                href="tel:+2348038829689" 
+                className="hover:text-white transition-colors flex items-center space-x-2"
+              >
+                <span>📞</span>
+                <span>+234 803 882 9689</span>
+              </a>
+            </div>
+          </div>
+
           <div className="flex justify-center space-x-6">
-            <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
-              <Github className="w-4 h-4 mr-2" />
-              GitHub
-            </Button>
+            <a 
+              href="https://github.com/Favourgoldd/nexus-design-platform.git" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
+              </Button>
+            </a>
             <Button variant="ghost" size="sm" className="text-slate-400 hover:text-white">
               <Figma className="w-4 h-4 mr-2" />
               Figma
